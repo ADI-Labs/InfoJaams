@@ -1,0 +1,107 @@
+body {
+      background-color: white;
+    }
+
+    h1 {
+      color: black;
+      padding: 1px 8px;
+    }
+
+    h2 {
+      color: #0a88d1
+      font-family: sans-serif;
+    }
+
+    p {
+      font-family: sans-serif;;
+      font-size: 16px;
+    }
+
+
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #0a88d1;
+    }
+
+
+
+    input[type=text] {
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 2px 12px 12px;
+        -webkit-transition: width 0.6s ease-in-out;
+        transition: width 0.6s ease-in-out;
+      }
+      input[type=text]:focus {
+        width: 40%;
+      }
+
+
+
+      body {font-family: "Lato", sans-serif;}
+
+    ul.tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #8fcff7;
+    }
+
+    /* Float the list items side by side */
+    ul.tab li {float: left;}
+
+    /* Style the links inside the list items */
+    ul.tab li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of links on hover */
+    ul.tab li a:hover {
+        background-color: #0a88d1;
+    }
+
+    /* Create an active/current tablink class */
+    ul.tab li a:focus, .active {
+        background-color: #0a88d1;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+    
