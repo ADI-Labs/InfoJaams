@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%= stylesheet_link_tag "index.css" %>
+</head>
+<body>
+<h1 style="text-align:center;"><button class="button button2">News/Sports</button> </h1>
+<table style="width:100%">
+
+uri = URI("https://api.nytimes.com/svc/topstories/v2/home.json")
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true
+request = Net::HTTP::Get.new(uri.request_uri)
+@result = JSON.parse(http.request(request).body)
+puts @result.inspect
+
+</body>
+</html>
