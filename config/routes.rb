@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   post 'welcome/index' => 'welcome#index'
-  post 'messages/reply' => 'messages#reply'
+  post 'messages/reply' => 'messages#returnResults'
+  get 'search' => 'search#returnResults'
+
   resource :messages do
     collection do
       post 'reply'
