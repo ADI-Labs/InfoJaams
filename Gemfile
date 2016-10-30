@@ -1,4 +1,20 @@
 source 'https://rubygems.org'
+#gemspec
+
+#gem 'google_directions'
+
+#gem 'google_maps_service',:require 'google_maps_service'
+gem 'google_maps_api-directions'
+
+#gem 'gmaps_directions'
+gem 'fileutils'
+gem 'rmagick'
+
+gem 'google-api-client', '~> 0.9', :require => 'google/apis/youtube_v3'
+
+gem 'jwt', '~> 1.0'
+
+gem 'trollop'
 
 gem 'sinatra'
 
@@ -24,6 +40,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# gem 'signet', git: "https://github.com/google/signet.git"
+
+# gem 'faraday'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
