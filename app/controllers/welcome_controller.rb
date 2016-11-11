@@ -6,4 +6,10 @@ class WelcomeController < ActionController::Base
   def login
   end
 
+  def news
+  end
+
+  def about
+  end
+
 end

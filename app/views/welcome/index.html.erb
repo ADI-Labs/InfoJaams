@@ -2,29 +2,31 @@
 <html>
 
 <body>
-<title>InfoJaams</title>
+  <title>InfoJaams</title>
 
 
   <head>
    <%= stylesheet_link_tag "index.css" %>
-    </head>
-    <body>
+   <meta charset="utf-8">
+ </head>
+ <body>
 
   <!--Navigation Bar- need to figure out tabs for this-->
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><%= link_to "News", '/news', :method => :get %></li>
-      <li><%= link_to "About", '/about', :method => :get %></li>
-      <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
-    </ul>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><%= link_to "News", '/news', :method => :get %></li>
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
 
   <!--Top Bar with intro/other graphics -->
   <div style="background-color:#8fcff7;color:black;padding:20px;">
     <h2>Welcome to InfoJams, user.Name!</h2>
+    <a href="https://google.com" class="button"> SIGN UP HERE! </a>
   </div>
 
   <!--Style for the search bars -->
-    
+  
 
   <!--Main search bar -->
   <h1>What do you want to search for?</h1>
@@ -36,7 +38,7 @@
 
   <!--CSS for catagories of searches (Tabs)-->
 
-    <body>
+  <body>
 
     <ul class="tab">
       <!-- ADD NEW TABS HERE (if we want...?) -->
@@ -78,19 +80,19 @@
     </div>
 
     <script>
-    function openCatagory(evt, cityName) {
+      function openCatagory(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = "none";
         }
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
-    }
+      }
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
@@ -99,5 +101,5 @@
 
   <hr>
   <p>
-</body>
-</html>
+  </body>
+  </html>
