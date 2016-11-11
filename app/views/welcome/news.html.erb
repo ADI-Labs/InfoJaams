@@ -4,15 +4,24 @@
 <%= stylesheet_link_tag "index.css" %>
 </head>
 <body>
+<h1 style="text-align:center;"> <button class="button button1"> <%= link_to('Home', '/', :method => :get) %> </button> </h1>
 <h1 style="text-align:center;"><button class="button button2">News/Sports</button> </h1>
 <table style="width:100%">
 
-uri = URI("https://api.nytimes.com/svc/topstories/v2/home.json")
-http = Net::HTTP.new(uri.host, uri.port)
-http.use_ssl = true
-request = Net::HTTP::Get.new(uri.request_uri)
-@result = JSON.parse(http.request(request).body)
-puts @result.inspect
+<table align="center">
+  <tr>
+    <th> <button class="button button2">Query</button> </th>
+	<th> <button class="button button2">Article</button> </th>
+  </tr>
+  <tr>
+ 	<td style = "text-align:center;">Search query</td>
+    <td style = "text-align:center;">Link to article</td>
+  </tr>
+  <tr>
+    <td style = "text-align:center;">Search query</td>
+    <td style = "text-align:center;">Link to article</td>
+  </tr>
+</table>
 
 </body>
 </html>

@@ -11,9 +11,9 @@ h1 {
 }
 
 p {
-  color: black;
+  color: white;
   font-family: ‘Courier New’, Courier, monospace;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 div {
@@ -24,7 +24,6 @@ div {
 table {
   color: white;
   font-family: ‘Courier New’, Courier, monospace;
-  margin: auto;
   border-spacing: 10px 10px;
   text-decoration-color: white;
 }
