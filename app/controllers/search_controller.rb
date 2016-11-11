@@ -3,19 +3,18 @@ class SearchController < ApplicationController
     if params[:q]
       page = params[:page] || 1
 
-      @results = GoogleCustomSearchApi.search(params[:q], page: page)
+      @results = GoogleCustomSearchApi.search(params[:q], page: 1)
     end
   end
 
   def returnResults
-    results = GoogleCustomSearchApi.search("Hank Aaron")
+    @results = GoogleCustomSearchApi.search("Hank Aaron")
 
-    puts results["items"]
-    results["items"].each do |result|
-      puts result["title"]
-    end 
-    #   results.each do |result|
-    #     puts result
-    # end
+    puts @results["items"]
+    @results["items"].each do |item|
+      puts item["title"], item["link"]
+
+    end
   end
+
 end

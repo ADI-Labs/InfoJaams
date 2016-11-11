@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
-gem 'google_custom_search_api' 
+gem 'bing-search'
+gem 'google_custom_search_api'
 gem 'google_custom_search'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -46,4 +46,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

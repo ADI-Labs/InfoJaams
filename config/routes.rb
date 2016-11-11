@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   post 'welcome/index' => 'welcome#index'
-  post 'messages/reply' => 'messages#returnResults'
-  get 'search' => 'search#returnResults'
+  post 'messages/reply' => 'messages#reply'
+  get 'bing' => 'bing#getResults'
 
   resource :messages do
     collection do
