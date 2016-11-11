@@ -3,8 +3,6 @@
 
 <body>
   <title>InfoJaams</title>
-
-
   <head>
    <%= stylesheet_link_tag "index.css" %>
    <meta charset="utf-8">
@@ -21,8 +19,8 @@
 
   <!--Top Bar with intro/other graphics -->
   <div style="background-color:#8fcff7;color:black;padding:20px;">
-    <h2>Welcome to InfoJams, user.Name!</h2>
-    <a href="https://google.com" class="button"> SIGN UP HERE! </a>
+    <h2>Welcome to InfoJams! Click below to sign up.</h2>
+      <button type="button" class="signupBtn"> <%= link_to "Sign Up", '/signup', :method => :post %></button>
   </div>
 
   <!--Style for the search bars -->
@@ -101,5 +99,14 @@
 
   <hr>
   <p>
+
+<button>
+Help meeeeeee
+<%link_to "Sign Up", '/signup', :method => :post %>
+  
+
+</button>
+
+
   </body>
   </html>
