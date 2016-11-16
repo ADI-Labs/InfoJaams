@@ -12,10 +12,10 @@ class UserController < ApplicationController
 	def renderAndProcess
 		
 		content = params[:Body]
+		@content=content
 		userPhone = params[:From]
 		contentArray = content.split(" ",2)
 		if contentArray[0]=="Song"
-			puts 'true'
 			textForSong(contentArray[1],userPhone)
 		end
 		if contentArray[0]=="Direction"
@@ -136,10 +136,6 @@ class UserController < ApplicationController
 		@firstResul = sanitize @youtube.list_searches('snippet', q: term, max_results: 1).items
 		@firstId= @firstResul[:id]
 		return @firstId
-	end
-
-	def getToken
-		puts @params
 	end
 
   	# reject bad results and store in a more useful format.
