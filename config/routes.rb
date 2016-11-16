@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   #post "/user/userTextSong" => 'user#renderSongText'
-  post "user/textUserSong" => 'user#textForSong'
+  post "user/getToken" => 'user#getToken'
+  post "user/textMessageIn" => 'user#renderAndProcess'
   get "user/testGoogle" => 'user#testRoute'
   #post "user/textForSong" 
   # The priority is based upon order of creation: first created -> highest priority.

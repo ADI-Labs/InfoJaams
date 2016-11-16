@@ -1,12 +1,5 @@
 source 'https://rubygems.org'
-#gemspec
-
-#gem 'google_directions'
-
-#gem 'google_maps_service',:require 'google_maps_service'
-gem 'google_maps_api-directions'
-
-#gem 'gmaps_directions'
+gem 'json'
 gem 'fileutils'
 gem 'rmagick'
 

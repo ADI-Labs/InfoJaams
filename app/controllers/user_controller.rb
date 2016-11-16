@@ -5,16 +5,65 @@ class UserController < ApplicationController
 	end
 
 	#ngrok path for tomcat server of the day
-	Server_Path = "http://3b4a4234.ngrok.io"
+	Server_Path = "https://6571a974.ngrok.io"
 	File_Path='/usr/local/apache-tomcat-8.5.6/webapps/test/'
+	DEVELOPER_KEY = 'AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc'
 
-	def renderAndReply
+	def renderAndProcess
+		
+		content = params[:Body]
+		userPhone = params[:From]
+		contentArray = content.split(" ",2)
+		if contentArray[0]=="Song"
+			puts 'true'
+			textForSong(contentArray[1],userPhone)
+		end
+		if contentArray[0]=="Direction"
+			directionCommand = contentArray[1]
+			origin = 'place_id:ChIJyQ3Tlj72wokRUCflR_kzeVc'
+			destination = 'place_id:ChIJwZVT9ZpZwokRBfO1cTF0MNo'
+			getDirection(userPhone,origin,destination)
+
+		end
 
 	end
 
-	def textForSong
-		@songName = params[:Body]
-		@userPhone= params[:From]
+	def getDirection(userPhone,origin,destination)
+		basicUrl='https://maps.googleapis.com/maps/api/directions/json?'
+		url=basicUrl+'origin='+origin+'&destination='+destination+'&key='+ DEVELOPER_KEY
+		resp = Net::HTTP.get_response(URI.parse(url))
+   		data = resp.body
+		#response = RestClient.get(url)
+		result = JSON.parse(data)
+		step_direction = result["routes"][0]["legs"][0]["steps"]
+		i = 0
+		textDirection = ''
+		while i < step_direction.length
+			currStep = step_direction[i]
+			currInstruct = currStep["html_instructions"].gsub(%r{</?[^>]+?>}, '')
+			textDirection += currInstruct + "\n"
+			i += 1
+		end
+		puts textDirection
+		account_sid = "ACa0f1dab35e78b3d1a75d65bd7a639b58" # Your Account SID from www.twilio.com/console
+		auth_token = "195fe9a65be40d1df9bf42c7256b139a"
+		@client = Twilio::REST::Client.new account_sid, auth_token
+		message = @client.account.messages.create(:body => textDirection,
+        :to => userPhone,    # Replace with your phone number
+        :from => "+16466813898")
+		
+	end
+
+	def testRoute
+		puts getDirection('Toronto','Montreal')
+	end
+
+
+	
+
+	def textForSong(songName,userPhone)
+		@songName = songName
+		@userPhone= userPhone
 		#puts @userPhone
 		account_sid = "ACa0f1dab35e78b3d1a75d65bd7a639b58" # Your Account SID from www.twilio.com/console
 		auth_token = "195fe9a65be40d1df9bf42c7256b139a"   # Your Auth Token from www.twilio.com/console
@@ -39,23 +88,9 @@ class UserController < ApplicationController
 		puts "call end"
 	end
 
-	def textForRoute
-
-	end
-
 	# !/usr/bin/ruby
 
-	def testRoute
-		origin = "350, 5th Ave, NY"
-		destination = [40.777552, -73.954732]
-		options = {:language => 'pt'}
-		GoogleMapsAPI::Directions.route(origin, destination, options)
-	end
-
-	def get_map_service
-		gmaps = GoogleMapsService::Client.new(key: DEVELOPER_KEY)
-	end
-
+	
 
 	
 	def writeXml(songName)
@@ -89,7 +124,7 @@ class UserController < ApplicationController
 	# tab of
 	# Google Developers Console <https://console.developers.google.com/>
 	# Please ensure that you have enabled the YouTube Data API for your project.
-	DEVELOPER_KEY = 'AIzaSyCNI7LxiiF6VgRn5iyLTaWaTitKoI1dmWY'
+	
 
 	def get_youtube_service
 		@youtube = Google::Apis::YoutubeV3::YouTubeService.new
@@ -101,6 +136,10 @@ class UserController < ApplicationController
 		@firstResul = sanitize @youtube.list_searches('snippet', q: term, max_results: 1).items
 		@firstId= @firstResul[:id]
 		return @firstId
+	end
+
+	def getToken
+		puts @params
 	end
 
   	# reject bad results and store in a more useful format.

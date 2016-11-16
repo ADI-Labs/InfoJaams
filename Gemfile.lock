@@ -68,9 +68,6 @@ GEM
       mime-types (>= 1.6)
       representable (~> 2.3.0)
       retriable (~> 2.0)
-    google_maps_api-core (0.2.0)
-    google_maps_api-directions (0.2.0)
-      google_maps_api-core (~> 0.2)
     googleauth (0.5.1)
       faraday (~> 0.9)
       jwt (~> 1.4)
@@ -205,9 +202,9 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   fileutils
   google-api-client (~> 0.9)
-  google_maps_api-directions
   jbuilder (~> 2.0)
   jquery-rails
+  json
   jwt (~> 1.0)
   rails (= 4.2.6)
   rmagick

@@ -9204,3 +9204,1491 @@ NameError (uninitialized constant UserController::GoogleMapsAPI):
   Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.1ms)
+
+
+Started GET "/articles/new" for ::1 at 2016-11-04 15:12:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (132.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-04 15:12:06 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.145.184.251 at 2016-11-04 15:26:47 -0400
+Cannot render console from 54.145.184.251! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMcf8c8b8f107f34c694a52752a1002467", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMcf8c8b8f107f34c694a52752a1002467", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Yue ban xiao ye qu", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMcf8c8b8f107f34c694a52752a1002467", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyCNI7LxiiF6VgRn5iyLTaWaTitKoI1dmWY&maxResults=1&part=snippet&q=Yue%20ban%20xiao%20ye%20qu
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyCNI7LxiiF6VgRn5iyLTaWaTitKoI1dmWY&maxResults=1&part=snippet&q=Yue%20ban%20xiao%20ye%20qu == 200 (1119 bytes) 499ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fea19b8fd70
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/PV2BBZnPre7RFlk2V59I_MdRYyM\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fea19b8c828
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/evB100L0PICkGNli3aMq3hYhqV8\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fea19b7f3d0
+      @kind="youtube#video",
+      @video_id="Q6HbJQ3nU5A">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fea19b7c450
+      @channel_id="UCsItzrb-pPD1kN5_AZ7bzJA",
+      @channel_title="Duan Yang",
+      @description="",
+      @live_broadcast_content="none",
+      @published_at=Sat, 18 Oct 2014 09:59:27 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fea1b0389c0
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea1b02ba68
+          @height=90,
+          @url="https://i.ytimg.com/vi/Q6HbJQ3nU5A/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea1b0298f8
+          @height=360,
+          @url="https://i.ytimg.com/vi/Q6HbJQ3nU5A/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea1731b060
+          @height=180,
+          @url="https://i.ytimg.com/vi/Q6HbJQ3nU5A/mqdefault.jpg",
+          @width=320>>,
+      @title="The Voice of China 陳樂基 《月半小夜曲》">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fea19b6ed50
+   @results_per_page=1,
+   @total_results=2056>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.4ms)
+Completed 200 OK in 11807ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 52.91.21.133 at 2016-11-04 15:27:47 -0400
+Cannot render console from 52.91.21.133! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM39855f4f4357fbdb2b14aac22abb53f1", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM39855f4f4357fbdb2b14aac22abb53f1", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Yue ban xiao ye qu rong zu er", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM39855f4f4357fbdb2b14aac22abb53f1", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyCNI7LxiiF6VgRn5iyLTaWaTitKoI1dmWY&maxResults=1&part=snippet&q=Yue%20ban%20xiao%20ye%20qu%20rong%20zu%20er
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyCNI7LxiiF6VgRn5iyLTaWaTitKoI1dmWY&maxResults=1&part=snippet&q=Yue%20ban%20xiao%20ye%20qu%20rong%20zu%20er == 200 (1408 bytes) 561ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fea164b3d38
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/-7MkwxJeld9VKL-LFgBJCFLOY08\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fea1595d970
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/uYyG12yXnfJO3Am4j8ZHgdOSDLU\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fea1575b780
+      @kind="youtube#video",
+      @video_id="qyeiBZv6tQc">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fea1576ac30
+      @channel_id="UCwnDGKPgpRsJUjuSGhATAmg",
+      @channel_title="我是歌手官方频道 I AM A SINGER",
+      @description=
+       "【我是歌手盛大开声】1月我是歌手第4季正式登陆YOUTUBE我是歌手官方频道，独家首发，欢迎订阅，获取实时最新讯息，每一期精彩赛事都不会错过！...",
+      @live_broadcast_content="none",
+      @published_at=Fri, 26 Feb 2016 21:40:45 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fea157823f8
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea1578a760
+          @height=90,
+          @url="https://i.ytimg.com/vi/qyeiBZv6tQc/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea164dbe00
+          @height=360,
+          @url="https://i.ytimg.com/vi/qyeiBZv6tQc/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fea1596fd78
+          @height=180,
+          @url="https://i.ytimg.com/vi/qyeiBZv6tQc/mqdefault.jpg",
+          @width=320>>,
+      @title="容祖儿《月半小夜曲》 — 我是歌手4第7期单曲纯享 I AM A SINGER 4 【我是歌手官方频道】">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fea1597d9a0
+   @results_per_page=1,
+   @total_results=52>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.1ms)
+Completed 200 OK in 5353ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:29:49 -0400
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.5ms)
+Completed 200 OK in 389ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:30:41 -0400
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:35:57 -0400
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 81ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:36:43 -0400
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:44:34 -0400
+Processing by UserController#testRoute as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 2..3)):
+  app/controllers/user_controller.rb:49:in `testRoute'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 15:58:31 -0400
+Processing by UserController#testRoute as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant UserController::GoogleApiDirections):
+  app/controllers/user_controller.rb:45:in `testRoute'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.9ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-04 17:36:13 -0400
+Processing by UserController#testRoute as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant UserController::GoogleDirections):
+  app/controllers/user_controller.rb:47:in `testRoute'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (38.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.8ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564937&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:27:39 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.6ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564938&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:27:48 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.2ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564939&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:27:58 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.1ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564940&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:28:01 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564941&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:28:06 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.5ms)
+
+
+Started GET "/user/getToken?client_id=XYhAps3lyKDJ2EB1cTZE0w&scope=&state=5564942&redirect_uri=https%3A%2F%2Fwww.getpostman.com%2Foauth2%2Fcallback&response_type=code" for 130.132.173.81 at 2016-11-13 02:29:53 -0500
+Cannot render console from 130.132.173.81! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/user/getToken"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.5ms)
+
+
+Started POST "/user/textUserSong" for 54.197.210.239 at 2016-11-15 21:06:23 -0500
+Cannot render console from 54.197.210.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMcc6d4e45633ff579438d344b5bebcebc", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMcc6d4e45633ff579438d344b5bebcebc", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Ye de di qi zhang", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMcc6d4e45633ff579438d344b5bebcebc", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Ye%20de%20di%20qi%20zhang
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Ye%20de%20di%20qi%20zhang == 200 (1339 bytes) 261ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fec0b872568
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/m6qajEChQluJmp3qz2MpX9AViTc\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fec07173a18
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/0JaL-FFX6rtHyg-t2mFdDynvX-4\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fec07172528
+      @kind="youtube#video",
+      @video_id="AdkkF6MT0R0">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fec057be7d0
+      @channel_id="UCKUlsqazP-4QmxdEtUPlxOA",
+      @channel_title="杰威爾音樂 JVR Music",
+      @description=
+       "夜的第七章改編詞:黃俊郎曲:周杰倫iTunes: https://itunes.apple.com/tw/album/ye-de-di-qi-zhang/id536285027?i=536285257&l=zh 福爾摩斯說：「我們可以遺忘， ...",
+      @live_broadcast_content="none",
+      @published_at=Wed, 27 Mar 2013 06:10:45 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fec07179508
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fec07178540
+          @height=90,
+          @url="https://i.ytimg.com/vi/AdkkF6MT0R0/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fec07182ec8
+          @height=360,
+          @url="https://i.ytimg.com/vi/AdkkF6MT0R0/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fec07180b00
+          @height=180,
+          @url="https://i.ytimg.com/vi/AdkkF6MT0R0/mqdefault.jpg",
+          @width=320>>,
+      @title="Jay Chou 周杰倫 [夜的第七章 Chapter Seven] Official Music Video">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fec07189750
+   @results_per_page=1,
+   @total_results=10241>,
+ @region_code="US">
+
+Completed   in 193074ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.134.74 at 2016-11-15 21:10:13 -0500
+Cannot render console from 160.39.134.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 28ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.147.206.149 at 2016-11-15 21:10:27 -0500
+Cannot render console from 54.147.206.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMe383e6d07f1ffbf2cd591e0ac85c7efb", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMe383e6d07f1ffbf2cd591e0ac85c7efb", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Hello", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMe383e6d07f1ffbf2cd591e0ac85c7efb", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hello
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hello == 200 (1243 bytes) 384ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d594e1c0
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/LKt15ru3UuBzo1wjroKsxSXqW-k\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d595ffb0
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/j0uEstXCXOhrDqDegEBmEeHqsBM\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d595eac0
+      @kind="youtube#video",
+      @video_id="YQHsXMglC9A">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d595c360
+      @channel_id="UComP_epzeKzvBX156r6pm1Q",
+      @channel_title="AdeleVEVO",
+      @description=
+       "'Hello' is taken from the new album, 25, out November 20. http://adele.com Available now from iTunes http://smarturl.it/itunes25 Available now from Amazon ...",
+      @live_broadcast_content="none",
+      @published_at=Fri, 23 Oct 2015 06:54:18 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d5966450
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d5965488
+          @height=90,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d3df9910
+          @height=360,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d9b4a830
+          @height=180,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/mqdefault.jpg",
+          @width=320>>,
+      @title="Adele - Hello">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d3df0e50
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.4ms)
+Completed 200 OK in 25547ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.165.70.191 at 2016-11-15 21:11:59 -0500
+Cannot render console from 54.165.70.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMf740283e2c2490129a5e61d61cf04080", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMf740283e2c2490129a5e61d61cf04080", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Counting stars", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMf740283e2c2490129a5e61d61cf04080", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Counting%20stars
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Counting%20stars == 200 (1269 bytes) 757ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d7eadba0
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/IVrzP8CGkpVI8DaBs8A1_cnY9NA\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d99eef68
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/d-NnmCP6BvUWV9v_ZINKaQ20YOQ\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d99ed960
+      @kind="youtube#video",
+      @video_id="hT_nvWreIhg">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d99e70b0
+      @channel_id="UCQ5kHOKpF3-1_UCKaqXARRg",
+      @channel_title="OneRepublicVEVO",
+      @description=
+       "Get OneRepublic's new album 'Oh My My,' featuring 'Kids,' 'Wherever I Go' and 'Let's Hurt Tonight:' http://smarturl.it/OhMyMy Listen to the Best of OneRepublic ...",
+      @live_broadcast_content="none",
+      @published_at=Fri, 31 May 2013 07:00:36 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d99db5d0
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d99da5e0
+          @height=90,
+          @url="https://i.ytimg.com/vi/hT_nvWreIhg/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d99d8420
+          @height=360,
+          @url="https://i.ytimg.com/vi/hT_nvWreIhg/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d99cd9a8
+          @height=180,
+          @url="https://i.ytimg.com/vi/hT_nvWreIhg/mqdefault.jpg",
+          @width=320>>,
+      @title="OneRepublic - Counting Stars">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d99b5b78
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.1ms)
+Completed 200 OK in 3776ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.198.50.172 at 2016-11-15 21:12:38 -0500
+Cannot render console from 54.198.50.172! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMf15f9d023cdd998e0c2895f2d05e067c", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMf15f9d023cdd998e0c2895f2d05e067c", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Titanium", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMf15f9d023cdd998e0c2895f2d05e067c", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Titanium
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Titanium == 200 (1283 bytes) 2971ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d9831220
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/63U660h3Y3Szim2r-OZuEWMF5ME\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d9822130
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/7qrVCuwYxA9_KXPnd3Jy9XOytmk\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d9820c40
+      @kind="youtube#video",
+      @video_id="JRfuAukYTKg">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d9811dd0
+      @channel_id="UC1l7wYrva1qCH-wgqcHaaRg",
+      @channel_title="David Guetta",
+      @description=
+       "From the album Nothing But The Beat Ultimate - Download on iTunes here: http://smarturl.it/NBTBiTunes?IQid=vevo Featuring Sia, Ne-Yo, Akon, Nicki Minaj, Flo ...",
+      @live_broadcast_content="none",
+      @published_at=Wed, 21 Dec 2011 00:00:00 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d98027b8
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d9801700
+          @height=90,
+          @url="https://i.ytimg.com/vi/JRfuAukYTKg/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d77e6a10
+          @height=360,
+          @url="https://i.ytimg.com/vi/JRfuAukYTKg/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d77e4300
+          @height=180,
+          @url="https://i.ytimg.com/vi/JRfuAukYTKg/mqdefault.jpg",
+          @width=320>>,
+      @title="David Guetta - Titanium ft. Sia (Official Video)">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d7d944f8
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.0ms)
+Completed 200 OK in 6819ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.165.70.191 at 2016-11-15 21:14:45 -0500
+Cannot render console from 54.165.70.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM8da19e29664d6e474bb04bc7b7889765", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM8da19e29664d6e474bb04bc7b7889765", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Hold me down", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM8da19e29664d6e474bb04bc7b7889765", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down == 200 (1250 bytes) 340ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d7c8f850
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/uy8aB1h6XW-N3ohQxpegDx6JcEI\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d7c8c880
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/wCuYGxcGPwb_9a0Ty5jlptN2VFo\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d764b3e0
+      @kind="youtube#video",
+      @video_id="xKnG2d9tZdU">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d7648460
+      @channel_id="UCm3FgJ2Hqm7tb70T-GfwXVA",
+      @channel_title="HalseyVEVO",
+      @description=
+       "Download “BADLANDS” on iTunes: http://smarturl.it/HalseyBadlands?IQid=YT.hmd Order deluxe box of “BADLANDS”: http://smarturl.it/HalseyStore?",
+      @live_broadcast_content="none",
+      @published_at=Tue, 02 Jun 2015 04:00:00 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d7638a60
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d762b928
+          @height=90,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d7629510
+          @height=360,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d7c7ede8
+          @height=180,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/mqdefault.jpg",
+          @width=320>>,
+      @title="Halsey - Hold Me Down (Audio)">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d7c76d50
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.1ms)
+Completed 200 OK in 3901ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.172.45.226 at 2016-11-15 21:17:21 -0500
+Cannot render console from 54.172.45.226! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMae74ec33783e6a7931b735747d7317e7", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMae74ec33783e6a7931b735747d7317e7", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Hold me down", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMae74ec33783e6a7931b735747d7317e7", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down == 200 (1250 bytes) 370ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d7b13738
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/uy8aB1h6XW-N3ohQxpegDx6JcEI\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d7b10600
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/wCuYGxcGPwb_9a0Ty5jlptN2VFo\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d7b07320
+      @kind="youtube#video",
+      @video_id="xKnG2d9tZdU">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d7b04508
+      @channel_id="UCm3FgJ2Hqm7tb70T-GfwXVA",
+      @channel_title="HalseyVEVO",
+      @description=
+       "Download “BADLANDS” on iTunes: http://smarturl.it/HalseyBadlands?IQid=YT.hmd Order deluxe box of “BADLANDS”: http://smarturl.it/HalseyStore?",
+      @live_broadcast_content="none",
+      @published_at=Tue, 02 Jun 2015 04:00:00 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d73b45c8
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d73af780
+          @height=90,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d73ad200
+          @height=360,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d739ed18
+          @height=180,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/mqdefault.jpg",
+          @width=320>>,
+      @title="Halsey - Hold Me Down (Audio)">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d5532b68
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.1ms)
+Completed 200 OK in 1768ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.85.164.75 at 2016-11-15 21:26:22 -0500
+Cannot render console from 54.85.164.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM4b01e94dd8dc82c35e8f573fd2de4fb0", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM4b01e94dd8dc82c35e8f573fd2de4fb0", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Hello", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM4b01e94dd8dc82c35e8f573fd2de4fb0", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hello
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hello == 200 (1243 bytes) 446ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d7958678
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/LKt15ru3UuBzo1wjroKsxSXqW-k\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d7923a18
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/j0uEstXCXOhrDqDegEBmEeHqsBM\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d7920d40
+      @kind="youtube#video",
+      @video_id="YQHsXMglC9A">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d79039e8
+      @channel_id="UComP_epzeKzvBX156r6pm1Q",
+      @channel_title="AdeleVEVO",
+      @description=
+       "'Hello' is taken from the new album, 25, out November 20. http://adele.com Available now from iTunes http://smarturl.it/itunes25 Available now from Amazon ...",
+      @live_broadcast_content="none",
+      @published_at=Fri, 23 Oct 2015 06:54:18 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d78e0ec0
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d78d27d0
+          @height=90,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d78c07b0
+          @height=360,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d78a26e8
+          @height=180,
+          @url="https://i.ytimg.com/vi/YQHsXMglC9A/mqdefault.jpg",
+          @width=320>>,
+      @title="Adele - Hello">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d7873d20
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.1ms)
+Completed 200 OK in 46704ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 174.129.92.127 at 2016-11-15 21:28:56 -0500
+Cannot render console from 174.129.92.127! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMbb18287be4fb3a2aea30d782dc06e40a", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMbb18287be4fb3a2aea30d782dc06e40a", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"take a pill in ibiza", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMbb18287be4fb3a2aea30d782dc06e40a", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=take%20a%20pill%20in%20ibiza
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=take%20a%20pill%20in%20ibiza == 200 (1260 bytes) 339ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d58ab290
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/-OSDnJyjCn-jhfqHMBkMydTZkqU\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d589b980
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/VJHxAxb4Devg5QprB6XhyrGPkN4\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d589a3f0
+      @kind="youtube#video",
+      @video_id="foE1mO2yM04">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d588b968
+      @channel_id="UCtNFd4yNZvk3ZnnK96zU13g",
+      @channel_title="MikePosnerVEVO",
+      @description=
+       "Be As You Are (Remix) official video: https://MikePosner.lnk.to/BAYAVideoYD Mike Posner At Night, Alone. Available now: ...",
+      @live_broadcast_content="none",
+      @published_at=Sat, 27 Feb 2016 01:00:00 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d58884e8
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d7f17690
+          @height=90,
+          @url="https://i.ytimg.com/vi/foE1mO2yM04/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d7f154a8
+          @height=360,
+          @url="https://i.ytimg.com/vi/foE1mO2yM04/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d7f07038
+          @height=180,
+          @url="https://i.ytimg.com/vi/foE1mO2yM04/mqdefault.jpg",
+          @width=320>>,
+      @title="Mike Posner - I Took A Pill In Ibiza (Seeb Remix) (Explicit)">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d9a36ea8
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.0ms)
+Completed 200 OK in 24992ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textUserSong" for 54.162.246.1 at 2016-11-15 21:30:27 -0500
+Cannot render console from 54.162.246.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#textForSong as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM40400fa51ba89e810f3e9918896538e1", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM40400fa51ba89e810f3e9918896538e1", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Hold me down", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM40400fa51ba89e810f3e9918896538e1", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=Hold%20me%20down == 200 (1250 bytes) 276ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007fe6d3f32868
+ @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/uy8aB1h6XW-N3ohQxpegDx6JcEI\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007fe6d3f52d70
+    @etag="\"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/wCuYGxcGPwb_9a0Ty5jlptN2VFo\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007fe6d3f50818
+      @kind="youtube#video",
+      @video_id="xKnG2d9tZdU">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007fe6d3f60218
+      @channel_id="UCm3FgJ2Hqm7tb70T-GfwXVA",
+      @channel_title="HalseyVEVO",
+      @description=
+       "Download “BADLANDS” on iTunes: http://smarturl.it/HalseyBadlands?IQid=YT.hmd Order deluxe box of “BADLANDS”: http://smarturl.it/HalseyStore?",
+      @live_broadcast_content="none",
+      @published_at=Tue, 02 Jun 2015 04:00:00 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007fe6d56d82d8
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d56ea3c0
+          @height=90,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d56fa9f0
+          @height=360,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007fe6d5702858
+          @height=180,
+          @url="https://i.ytimg.com/vi/xKnG2d9tZdU/mqdefault.jpg",
+          @width=320>>,
+      @title="Halsey - Hold Me Down (Audio)">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007fe6d5733098
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/textForSong.html.erb (0.0ms)
+Completed 200 OK in 37755ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-15 21:36:42 -0500
+Processing by UserController#testRoute as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): https://maps.googleapis.com/maps/api/directions/json?origin=#{origin}&destination=#{destination}&key=#{DEVELOPER_KEY}):
+  app/controllers/user_controller.rb:14:in `getDirection'
+  app/controllers/user_controller.rb:31:in `testRoute'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.5ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-15 21:38:10 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.7ms)
+Completed 200 OK in 326ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-15 21:38:28 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 236ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-15 21:43:02 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (1.6ms)
+Completed 200 OK in 540ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 52.91.8.253 at 2016-11-15 21:55:18 -0500
+Cannot render console from 52.91.8.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:15: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:61: `@,' is not allowed as an instance variable name
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+		youtube_in_mp3 @,@videoID
+		                ^):
+  app/controllers/user_controller.rb:15: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
+  app/controllers/user_controller.rb:61: `@,' is not allowed as an instance variable name
+  app/controllers/user_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+
+
+Started POST "/user/textMessageIn" for 54.147.206.149 at 2016-11-15 21:56:38 -0500
+Cannot render console from 54.147.206.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:62: `@,' is not allowed as an instance variable name
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end
+		youtube_in_mp3 @,@videoID
+		                ^):
+  app/controllers/user_controller.rb:62: `@,' is not allowed as an instance variable name
+  app/controllers/user_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.0ms)
+
+
+Started GET "/" for 160.39.134.74 at 2016-11-15 21:57:26 -0500
+Cannot render console from 160.39.134.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 31ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for 160.39.134.74 at 2016-11-15 21:57:37 -0500
+Cannot render console from 160.39.134.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:62: `@,' is not allowed as an instance variable name
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end
+		youtube_in_mp3 @,@videoID
+		                ^):
+  app/controllers/user_controller.rb:62: `@,' is not allowed as an instance variable name
+  app/controllers/user_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.0ms)
+
+
+Started GET "/user/testGoogle" for 160.39.134.74 at 2016-11-15 21:58:57 -0500
+Cannot render console from 160.39.134.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.3ms)
+Completed 200 OK in 402ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.164.166.73 at 2016-11-15 21:59:14 -0500
+Cannot render console from 54.164.166.73! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM7064ac127b33bfca2e47a6498e9f3e2a", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM7064ac127b33bfca2e47a6498e9f3e2a", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM7064ac127b33bfca2e47a6498e9f3e2a", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.84.78.136 at 2016-11-15 22:01:14 -0500
+Cannot render console from 54.84.78.136! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMe56de4c777128f1e520cfe8aa0437018", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMe56de4c777128f1e520cfe8aa0437018", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMe56de4c777128f1e520cfe8aa0437018", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+
+
+Started POST "/user/textMessageIn" for 54.147.216.233 at 2016-11-15 22:01:41 -0500
+Cannot render console from 54.147.216.233! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM7ef5be9c301c8486deceb1fa36598ee2", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM7ef5be9c301c8486deceb1fa36598ee2", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM7ef5be9c301c8486deceb1fa36598ee2", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+
+
+Started POST "/user/textMessageIn" for 54.160.93.255 at 2016-11-15 22:02:03 -0500
+Cannot render console from 54.160.93.255! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM14b77e6a0c3f715ab400d5378da8795b", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM14b77e6a0c3f715ab400d5378da8795b", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM14b77e6a0c3f715ab400d5378da8795b", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+
+
+Started POST "/user/textMessageIn" for 54.226.135.191 at 2016-11-15 22:02:37 -0500
+Cannot render console from 54.226.135.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM346a34b58bce0d4e2d82ef8c74008a9f", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM346a34b58bce0d4e2d82ef8c74008a9f", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM346a34b58bce0d4e2d82ef8c74008a9f", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.8ms)
+
+
+Started POST "/user/textMessageIn" for 52.90.244.190 at 2016-11-15 22:04:04 -0500
+Cannot render console from 52.90.244.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMbc2fe327e1dffe40d8bbec2e2b6e2a8d", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMbc2fe327e1dffe40d8bbec2e2b6e2a8d", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMbc2fe327e1dffe40d8bbec2e2b6e2a8d", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.4ms)
+
+
+Started POST "/user/textMessageIn" for 54.159.64.152 at 2016-11-15 22:05:09 -0500
+Cannot render console from 54.159.64.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM77710c67b5e960f7919a0dafd3acdf84", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM77710c67b5e960f7919a0dafd3acdf84", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM77710c67b5e960f7919a0dafd3acdf84", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.85.164.75 at 2016-11-15 22:05:54 -0500
+Cannot render console from 54.85.164.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM69acf53f5e8cb749b700a7717a68a9c2", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM69acf53f5e8cb749b700a7717a68a9c2", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM69acf53f5e8cb749b700a7717a68a9c2", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 107.20.81.246 at 2016-11-15 22:06:27 -0500
+Cannot render console from 107.20.81.246! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM8b0ae99e35dca19b272cf4a6bfe25ff3", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM8b0ae99e35dca19b272cf4a6bfe25ff3", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM8b0ae99e35dca19b272cf4a6bfe25ff3", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:12:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.210.188.245 at 2016-11-15 22:09:18 -0500
+Cannot render console from 54.210.188.245! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM1cb85ea6df36eacdb589e4359ae7efd7", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM1cb85ea6df36eacdb589e4359ae7efd7", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM1cb85ea6df36eacdb589e4359ae7efd7", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 52.91.248.89 at 2016-11-15 22:10:07 -0500
+Cannot render console from 52.91.248.89! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMbdf7c8d7c9731025457693cff9460f82", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMbdf7c8d7c9731025457693cff9460f82", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMbdf7c8d7c9731025457693cff9460f82", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.163.186.239 at 2016-11-15 22:10:37 -0500
+Cannot render console from 54.163.186.239! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM3dd3a5cf0763e3b71f5858ff837db23a", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM3dd3a5cf0763e3b71f5858ff837db23a", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM3dd3a5cf0763e3b71f5858ff837db23a", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=love%20story
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=love%20story == 200 (1188 bytes) 420ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007f8357b6a558
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/K21U8q2l_sHtdGfS984jEK64qP4\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007f835b95ec38
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/tz_7exgp3Jl-X3RBECrVZ03Yvt4\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007f835b95d388
+      @kind="youtube#video",
+      @video_id="8xg3vE8Ie_E">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007f835b54eb48
+      @channel_id="UCANLZYMidaCbLQFWXBC95Jg",
+      @channel_title="TaylorSwiftVEVO",
+      @description=
+       "Music video by Taylor Swift performing Love Story. (C) 2008 Big Machine Records, LLC.",
+      @live_broadcast_content="none",
+      @published_at=Tue, 16 Jun 2009 21:56:20 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007f835b53af80
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b539bf8
+          @height=90,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b533758
+          @height=360,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b531048
+          @height=180,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/mqdefault.jpg",
+          @width=320>>,
+      @title="Taylor Swift - Love Story">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007f835b528e98
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/renderAndProcess.html.erb (0.0ms)
+Completed 200 OK in 2152ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.152.119.212 at 2016-11-15 22:11:00 -0500
+Cannot render console from 54.152.119.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM0929f21df7df4de3f4da9f1e82ffcca4", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM0929f21df7df4de3f4da9f1e82ffcca4", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Song love story", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM0929f21df7df4de3f4da9f1e82ffcca4", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Sending HTTP get https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=love%20story
+200
+#<Hurley::Response GET https://www.googleapis.com/youtube/v3/search?key=AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc&maxResults=1&part=snippet&q=love%20story == 200 (1188 bytes) 1663ms>
+Success - #<Google::Apis::YoutubeV3::SearchListsResponse:0x007f835b923200
+ @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/K21U8q2l_sHtdGfS984jEK64qP4\"",
+ @items=
+  [#<Google::Apis::YoutubeV3::SearchResult:0x007f835b91bd20
+    @etag="\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/tz_7exgp3Jl-X3RBECrVZ03Yvt4\"",
+    @id=
+     #<Google::Apis::YoutubeV3::ResourceId:0x007f835b91a650
+      @kind="youtube#video",
+      @video_id="8xg3vE8Ie_E">,
+    @kind="youtube#searchResult",
+    @snippet=
+     #<Google::Apis::YoutubeV3::SearchResultSnippet:0x007f835b913a58
+      @channel_id="UCANLZYMidaCbLQFWXBC95Jg",
+      @channel_title="TaylorSwiftVEVO",
+      @description=
+       "Music video by Taylor Swift performing Love Story. (C) 2008 Big Machine Records, LLC.",
+      @live_broadcast_content="none",
+      @published_at=Tue, 16 Jun 2009 21:56:20 +0000,
+      @thumbnails=
+       #<Google::Apis::YoutubeV3::ThumbnailDetails:0x007f835b9103d0
+        @default=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b90b150
+          @height=90,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/default.jpg",
+          @width=120>,
+        @high=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b908c70
+          @height=360,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/hqdefault.jpg",
+          @width=480>,
+        @medium=
+         #<Google::Apis::YoutubeV3::Thumbnail:0x007f835b9024b0
+          @height=180,
+          @url="https://i.ytimg.com/vi/8xg3vE8Ie_E/mqdefault.jpg",
+          @width=320>>,
+      @title="Taylor Swift - Love Story">>],
+ @kind="youtube#searchListResponse",
+ @next_page_token="CAEQAA",
+ @page_info=
+  #<Google::Apis::YoutubeV3::PageInfo:0x007f835b8fa080
+   @results_per_page=1,
+   @total_results=1000000>,
+ @region_code="US">
+
+  Rendered user/renderAndProcess.html.erb (0.1ms)
+Completed 200 OK in 5715ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 107.20.129.213 at 2016-11-15 22:26:01 -0500
+Cannot render console from 107.20.129.213! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:122: dynamic constant assignment
+	DEVELOPER_KEY = 'AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc'
+	               ^
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_controller.rb:122: dynamic constant assignment
+  app/controllers/user_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.9ms)
+
+
+Started POST "/user/textMessageIn" for 52.91.49.254 at 2016-11-15 22:27:04 -0500
+Cannot render console from 52.91.49.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:122: dynamic constant assignment
+	DEVELOPER_KEY = 'AIzaSyAxo9_2TA6EXg_BAOsvxKzYd2BWNchVKfc'
+	               ^
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_controller.rb:122: dynamic constant assignment
+  app/controllers/user_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+
+
+Started POST "/user/textMessageIn" for 54.152.65.16 at 2016-11-15 22:28:47 -0500
+Cannot render console from 54.152.65.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:156: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/user_controller.rb:156: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+
+
+Started POST "/user/textMessageIn" for 54.147.60.180 at 2016-11-15 22:29:25 -0500
+Cannot render console from 54.147.60.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMa366718c9c7301bca62352cbba27a8b4", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMa366718c9c7301bca62352cbba27a8b4", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMa366718c9c7301bca62352cbba27a8b4", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `origin' for #<UserController:0x007f8357bd0420>):
+  app/controllers/user_controller.rb:31:in `getDirection'
+  app/controllers/user_controller.rb:23:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.3ms)
+
+
+Started POST "/user/textMessageIn" for 54.172.198.229 at 2016-11-15 22:30:21 -0500
+Cannot render console from 54.172.198.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMdb891ad1724344aedd2e6d5df533435e", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMdb891ad1724344aedd2e6d5df533435e", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMdb891ad1724344aedd2e6d5df533435e", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `account_sid' for #<UserController:0x007f835b84f248>):
+  app/controllers/user_controller.rb:45:in `getDirection'
+  app/controllers/user_controller.rb:23:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.6ms)
+
+
+Started POST "/user/textMessageIn" for 54.160.93.255 at 2016-11-15 22:31:20 -0500
+Cannot render console from 54.160.93.255! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM78a5d138e3136aa6ec6b9a5e6a85afb3", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM78a5d138e3136aa6ec6b9a5e6a85afb3", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM78a5d138e3136aa6ec6b9a5e6a85afb3", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 494ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The concatenated message body exceeds the 1600 character limit.):
+  app/controllers/user_controller.rb:48:in `getDirection'
+  app/controllers/user_controller.rb:23:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.1ms)
+
+
+Started POST "/user/textMessageIn" for 54.235.24.88 at 2016-11-15 22:32:04 -0500
+Cannot render console from 54.235.24.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM90f6552972fd72d8e7e19cc279de7530", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM90f6552972fd72d8e7e19cc279de7530", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM90f6552972fd72d8e7e19cc279de7530", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 342ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The concatenated message body exceeds the 1600 character limit.):
+  app/controllers/user_controller.rb:49:in `getDirection'
+  app/controllers/user_controller.rb:23:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.198.0.78 at 2016-11-15 22:34:53 -0500
+Cannot render console from 54.198.0.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM40db71a13f67451aa3db102f5dd9c62e", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM40db71a13f67451aa3db102f5dd9c62e", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM40db71a13f67451aa3db102f5dd9c62e", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The concatenated message body exceeds the 1600 character limit.):
+  app/controllers/user_controller.rb:51:in `getDirection'
+  app/controllers/user_controller.rb:25:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.7ms)
+
+
+Started POST "/user/textMessageIn" for 54.147.206.149 at 2016-11-15 22:35:24 -0500
+Cannot render console from 54.147.206.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.1ms)
+Completed 200 OK in 1312ms (Views: 18.6ms | ActiveRecord: 0.0ms)
