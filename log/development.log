@@ -10692,3 +10692,217 @@ Processing by UserController#renderAndProcess as */*
   Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia NYU", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM54df8bfa2fb4a3016aeebeff5c8af12e", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
   Rendered user/renderAndProcess.html.erb (0.1ms)
 Completed 200 OK in 1312ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 01:05:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/user/testGoogle"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/AliceChen/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.7ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:38:21 -0500
+
+SyntaxError (/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:34: syntax error, unexpected ..
+...ctionCommand[0..columnIndex+2..directionCommand.length-1].su...
+...                               ^
+/Users/AliceChen/InfoJaams/app/controllers/user_controller.rb:34: syntax error, unexpected ']', expecting keyword_end
+...x+2..directionCommand.length-1].sub(" ","+")
+...                               ^):
+  app/controllers/user_controller.rb:34: syntax error, unexpected ..
+  app/controllers/user_controller.rb:34: syntax error, unexpected ']', expecting keyword_end
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.2ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:42:24 -0500
+Processing by UserController#testRoute as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `url' for #<UserController:0x007f84c7e6fed0>
+Did you mean?  url_for
+               url_options
+               URI):
+  app/controllers/user_controller.rb:47:in `getPlaceId'
+  app/controllers/user_controller.rb:80:in `testRoute'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.2ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:42:41 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.6ms)
+Completed 200 OK in 160ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:43:13 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:43:39 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 104ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:43:54 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:44:29 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:44:41 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:45:09 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 166ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:45:33 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 227ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:47:01 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 217ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:47:32 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 151ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/testGoogle" for ::1 at 2016-11-16 20:47:59 -0500
+Processing by UserController#testRoute as HTML
+  Rendered user/testRoute.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 52.90.11.57 at 2016-11-16 20:50:57 -0500
+Cannot render console from 52.90.11.57! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM8420595fc471296eb500b99dfb5d66a8", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM8420595fc471296eb500b99dfb5d66a8", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia: New York University", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM8420595fc471296eb500b99dfb5d66a8", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:60:in `getDirection'
+  app/controllers/user_controller.rb:25:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.1ms)
+
+
+Started POST "/user/textMessageIn" for 54.161.218.17 at 2016-11-16 20:52:26 -0500
+Cannot render console from 54.161.218.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM7b1c7189d811a177f8614031e9073dc8", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM7b1c7189d811a177f8614031e9073dc8", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia: New York University", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM7b1c7189d811a177f8614031e9073dc8", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 451ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/user_controller.rb:62:in `getDirection'
+  app/controllers/user_controller.rb:27:in `renderAndProcess'
+
+
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/AliceChen/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.6ms)
+
+
+Started POST "/user/textMessageIn" for 54.146.47.8 at 2016-11-16 20:53:35 -0500
+Cannot render console from 54.146.47.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SM4cfc5a8db627f9f8408dc5be20101170", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SM4cfc5a8db627f9f8408dc5be20101170", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia: New York University", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SM4cfc5a8db627f9f8408dc5be20101170", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.5ms)
+Completed 200 OK in 5677ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/textMessageIn" for 54.208.165.78 at 2016-11-16 20:54:08 -0500
+Cannot render console from 54.208.165.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UserController#renderAndProcess as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"NY", "SmsMessageSid"=>"SMd773b97aa0ca57a15819d8093009879c", "NumMedia"=>"0", "ToCity"=>"", "FromZip"=>"10013", "SmsSid"=>"SMd773b97aa0ca57a15819d8093009879c", "FromState"=>"NY", "SmsStatus"=>"received", "FromCity"=>"NEW YORK", "Body"=>"Direction Columbia University: Times Square", "FromCountry"=>"US", "To"=>"+16466813898", "ToZip"=>"", "NumSegments"=>"1", "MessageSid"=>"SMd773b97aa0ca57a15819d8093009879c", "AccountSid"=>"ACa0f1dab35e78b3d1a75d65bd7a639b58", "From"=>"+13479825878", "ApiVersion"=>"2010-04-01"}
+  Rendered user/renderAndProcess.html.erb (0.1ms)
+Completed 200 OK in 2017ms (Views: 20.3ms | ActiveRecord: 0.0ms)

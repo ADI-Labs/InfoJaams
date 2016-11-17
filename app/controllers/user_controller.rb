@@ -19,18 +19,40 @@ class UserController < ApplicationController
 			textForSong(contentArray[1],userPhone)
 		end
 		if contentArray[0]=="Direction"
-			directionCommand = contentArray[1]
-			origin = 'place_id:ChIJyQ3Tlj72wokRUCflR_kzeVc'
-			destination = 'place_id:ChIJwZVT9ZpZwokRBfO1cTF0MNo'
-			getDirection(userPhone,origin,destination)
+			orgAndDes = getOriAndDes(contentArray[1])
+			originID = orgAndDes[0]
+			destinationID = orgAndDes[1]
+			getDirection(userPhone,originID,destinationID)
 
 		end
 
 	end
 
+	def getOriAndDes(directionCommand)
+		columnIndex = directionCommand.index(':') 
+		orgName = directionCommand[0..columnIndex-1].sub(" ","+")
+		desName = directionCommand[columnIndex+2..directionCommand.length-1].sub(" ","+")
+
+		orgID = getPlaceId(orgName)
+
+		desID = getPlaceId(desName)
+
+		return [orgID,desID]
+
+	end
+
+
+	def getPlaceId(name)
+		placeUrl = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?input=' + name + '&language=pt_BR&key=' + DEVELOPER_KEY
+		resp = Net::HTTP.get_response(URI.parse(placeUrl))
+		data = resp.body
+		result = JSON.parse(data)
+		return result["predictions"][0]["place_id"]
+	end
+
 	def getDirection(userPhone,origin,destination)
 		basicUrl='https://maps.googleapis.com/maps/api/directions/json?'
-		url=basicUrl+'origin='+origin+'&destination='+destination+'&key='+ DEVELOPER_KEY
+		url=basicUrl+'origin=place_id:'+origin+'&destination=place_id:'+destination+'&key='+ DEVELOPER_KEY
 		resp = Net::HTTP.get_response(URI.parse(url))
    		data = resp.body
 		#response = RestClient.get(url)
@@ -55,7 +77,7 @@ class UserController < ApplicationController
 	end
 
 	def testRoute
-		puts getDirection('Toronto','Montreal')
+		puts getPlaceId("Columbia+University")
 	end
 
 
