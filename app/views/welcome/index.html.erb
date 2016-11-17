@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-<%= stylesheet_link_tag "index.css" %>
-</head>
 
-<body>
+<title>InfoJaams</title>
+  <head>
+   <%= stylesheet_link_tag "index.css" %>
+   <meta charset="utf-8">
+ </head>
+ <body>
+
+  <!--Navigation Bar- need to figure out tabs for this-->
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><%= link_to "News", '/news', :method => :get %></li>
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+  <!--Top Bar with intro/other graphics -->
+  <div style="background-color:#8fcff7;color:black;padding:20px;">
+    <h2>Welcome to InfoJams! Click below to sign up.</h2>
+      <button type="button" class="signupBtn"> <%= link_to "Sign Up", '/signup', :method => :post %></butto$
+  </div>
+
+  <!--Style for the search bars -->
+
+
+  <!--Main search bar -->
+  <h1>What do you want to search for?</h1>
+  <input type="text" name="search" placeholder="Search...">
+
+  <!--Search by catagory section -->
+<h1></h1>
+  <p> Search by catagory: </p>
+
+  <!--CSS for catagories of searches (Tabs)-->
+
+  <body>
+
+    <ul class="tab">
+      <!-- ADD NEW TABS HERE (if we want...?) -->
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'General')" id="defaul$
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'Health')">Health</a><$
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'News')">News</a></li>
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'Music')">Music</a></l$
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'Sports')">Sports</a><$
+    </ul>
+
+    <div id="General" class="tabcontent">
+      <h3>General</h3>
+<input type="text" name="search" placeholder="Search...">
+      <p></p>
+    </div>
+
+    <div id="Health" class="tabcontent">
+      <h3>Health</h3>
+      <input type="text" name="search" placeholder="Search...">
+      <p></p>
+    </div>
+
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+      <input type="text" name="search" placeholder="Search...">
+      <p></p>
+    </div>
+
+    <div id="Music" class="tabcontent">
+      <h3>Music</h3>
+      <input type="text" name="search" placeholder="Search...">
+      <p></p>
+    </div>
+
+    <div id="Sports" class="tabcontent">
+      <h3>Sports</h3>
+      <input type="text" name="search" placeholder="Search...">
+      <p></p>
+    </div>
+
+<script>
+      function openCatagory(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <p></p>
+
+  <hr>
+  <p>
+
+<button>
+Help meeeeeee
+<%link_to "Sign Up", '/signup', :method => :post %>
+
+
+</button>
+
+
+
+
 <div class="flex-container">
   <div class="flex-item"> <button class="button button3">Statistics</button> </div>
   <div class="flex-item"> <button class="button button3">Most Searched</button> </div>

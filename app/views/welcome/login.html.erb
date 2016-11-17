@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <%= stylesheet_link_tag "login.css" %>
+  <meta charset="utf-8">
+</head>
+<body>
+  <ul>
+    <li><%= link_to "Home", '/home', :method => :get %></a></li>
+    <li><%= link_to "News", '/news', :method => :get %></li>
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+  <div style="background-color:#8fcff7;color:black;padding:20px;">
+    <h2>Login to Your Account</h2>
+  </div>
+
+  <form action="action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="passwordPageGoesHere">password?</a></span>
+    </div>
+  </form>
+
+</body>
+</html>

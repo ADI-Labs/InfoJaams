@@ -19,5 +19,11 @@ class WelcomeController < ActionController::Base
 	def health
 
 	end
+  
+  def login
+  end
+
+  def about
+  end
 
 end
