@@ -4,7 +4,17 @@
 <%= stylesheet_link_tag "index.css" %>
 </head>
 <body>
-<h1 style="text-align:center;"> <button class="button button1"> <%= link_to('Home', '/', :method => :get) %> </button> </h1>
+<body>
+ <ul>
+    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li><%= link_to "General", '/general', :method => :get %></li>
+    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
+    <li><%= link_to "Music", '/music', :method => :get %></li>
+    <li><%= link_to "Health", '/health', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
 <h1 style="text-align:center;"><button class="button button2">Health</button> </h1>
 <table style="width:100%">
 

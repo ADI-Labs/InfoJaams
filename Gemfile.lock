@@ -159,8 +159,5 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
    1.13.4
-=======
    1.13.2
->>>>>>> origin/samBranch
