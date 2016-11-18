@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <%= stylesheet_link_tag "login.css" %>
+  <meta charset="utf-8">
+</head>
+<body>
+   <ul>
+    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li><%= link_to "General", '/general', :method => :get %></li>
+    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
+    <li><%= link_to "Music", '/music', :method => :get %></li>
+    <li><%= link_to "Health", '/health', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+  <div style="background-color:#8fcff7;color:black;padding:20px;">
+    <h2>Login to Your Account</h2>
+  </div>
+
+  <form action="action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn"><%= link_to "Cancel", '/', :method => :get %></button>
+      <button type= "button" class="cancelbtn" style="float:right"><%= link_to "Forgot your password?", '/password', :method => :get %></a></button>
+    </div>
+  </form>
+
+</body>
+</html>

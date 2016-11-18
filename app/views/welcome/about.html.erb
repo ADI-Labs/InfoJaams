@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+   <%= stylesheet_link_tag "index.css" %>
+   <meta charset="utf-8">
+</head>
+
+  <!--Navigation Bar- need to figure out tabs for this-->
+ <ul>
+    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li><%= link_to "General", '/general', :method => :get %></li>
+    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
+    <li><%= link_to "Music", '/music', :method => :get %></li>
+    <li><%= link_to "Health", '/health', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+<body>
+<p> InfoJaams was created by Sam, Angie, Maddie, and Alice. </p>
+<p> Made through <a href="https://adicu.com/Labs"> ADI Labs</a> <p>
+</body>
+
+</html>
