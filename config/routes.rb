@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   get '/home', to: 'welcome#index'
   get '/news', to: 'welcome#news'
   get '/about', to: 'welcome#about'
-  post  '/signup',  to: 'users#new' 
+  get '/signup', to: 'users#new'
+  
+  # post  '/signup',  to: 'users#new' 
 
 
   # Example of regular route:
