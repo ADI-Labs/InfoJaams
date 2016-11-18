@@ -10201,3 +10201,17 @@ Processing by UsersController#new as HTML
   Rendered shared/_error_messages.html.erb (0.0ms)
   Rendered users/new.html.erb (2.9ms)
 Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2016-11-18 17:04:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.5ms)
+  Rendered users/new.html.erb (43.6ms)
+Completed 200 OK in 75ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 17:04:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (216.2ms)
+Completed 200 OK in 222ms (Views: 221.7ms | ActiveRecord: 0.0ms)
