@@ -55,7 +55,11 @@ class UsersController < ApplicationController
 
   # 		chartkick.graph(datapoint)
 
+private
 
+def user_params
+  params.require(:user).permit(:name, :email, :pasword, :password_confirmation)
+end
 
 
   # end

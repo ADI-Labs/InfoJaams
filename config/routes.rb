@@ -12,7 +12,6 @@ Rails.application.routes.draw do
    get '/health', to: 'welcome#health'
    
   get '/login', to: 'welcome#login'
-  #get '/home', to: 'welcome#index'
   get '/about', to: 'welcome#about'
   get '/password', to: 'users#password'
   get '/signup', to: 'users#new'
