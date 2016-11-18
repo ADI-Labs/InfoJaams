@@ -1,76 +1,29 @@
- <html>
- <head>
-   <%= stylesheet_link_tag "login.css" %>
-   <meta charset="utf-8">
- </head>
- <body>
-     <ul>
-    <li><%= link_to "Home", '/', :method => :get %></li>   
-    <li><%= link_to "About", '/about', :method => :get %></li>
-    <li><%= link_to "General", '/general', :method => :get %></li>
-    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
-    <li><%= link_to "Music", '/music', :method => :get %></li>
-    <li><%= link_to "Health", '/health', :method => :get %></li>
-    <li style="float:right"><%= link_to "Log in", '/login', :method => :get %></li>
-    <li style="float:right"><%= link_to "Sign Up", '/signup', :method => :get %></li>
-  </ul>
-
-<h1>Create An Account</h1>
-
-  <div style="background-color:#8fcff7;color:black;padding:20px;">
-  </div>
-
-  <form action="action_page.php">
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter a username" name="uname" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter a password" name="psw" required>
-
-      <label><b>Email</b></label>
-      <input type="password" placeholder="Enter your email" name="email" required>
-
-      <button type="submit">Sign up</button>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn"><%= link_to "Cancel", '/', :method => :get %></button>
-    </div>
-  </form>
-
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
 <p>This will be a signup page for new users.</p>
 <p>Minimum Password length is 6!</p>
 
-		<div class="row">
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
+
     <%= f.label :name %>
-		<%= f.text_field :name%>
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
-		<%= form_for(@user) do |f| %>
-		<%= render 'shared/error_messages' %>
+    <%= f.text_field :name, class: "form-control" %>
 
-		<%= f.label :name %>
-		<%= f.text_field :name %>
+    <%= f.label :email %>
+    <%= f.email_field :email, class="form-control" %>
 
-		<%= f.label :email %>
-		<%= f.email_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password, class="form-control" %>
 
-		<%= f.label :password %>
-		<%= f.password_field :password%>
+    <%= f.label :password_confirmation, "Confirmation" %>
+    <%= f.password_field :password_confirmation, class="form-control" %>
 
-		<%= f.label :password_confirmation, "Confirmation" %>
-		<%= f.password_field :password_confirmation %>
-
-		<%= f.submit "Create my account", class: "btn btn-primary" %>
-		<% end %>
-	</div> 
+    <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 </div>
-</body>
-</html>
