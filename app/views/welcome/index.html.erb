@@ -16,7 +16,8 @@
     <li><%= link_to "News & Sports", '/news', :method => :get %></li>
     <li><%= link_to "Music", '/music', :method => :get %></li>
     <li><%= link_to "Health", '/health', :method => :get %></li>
-    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+    <li style="float:right"><%= link_to "Log in", '/login', :method => :get %></li>
+    <li style="float:right"><%= link_to "Sign Up", '/signup', :method => :get %></li>
   </ul>
 
 <body>
@@ -25,9 +26,6 @@
   <div style="background-color:#8fcff7;color:white;padding:20px; margin:auto;">
       <button type="button" class="button button2"> <%= link_to "Sign Up", '/signup', :method => :get %></button>
   </div>
-
-  <!--Style for the search bars -->
-
 
   <!--Main search bar -->
   <h1>What do you want to search for?</h1>
@@ -89,13 +87,10 @@
 </script>
 <p></p>
 
-<button>
+<!--<button>
 Create New User Test (Post request)
 <% link_to "Sign Up", '/signup', :method => :post %>
-</button>
-
-
-
+</button> -->
 
 <div class="flex-container">
   <div class="flex-item"> <button class="button button3">Statistics</button> </div>

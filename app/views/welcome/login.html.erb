@@ -6,18 +6,19 @@
   <meta charset="utf-8">
 </head>
 <body>
-   <ul>
+      <ul>
     <li><%= link_to "Home", '/', :method => :get %></li>   
     <li><%= link_to "About", '/about', :method => :get %></li>
     <li><%= link_to "General", '/general', :method => :get %></li>
     <li><%= link_to "News & Sports", '/news', :method => :get %></li>
     <li><%= link_to "Music", '/music', :method => :get %></li>
     <li><%= link_to "Health", '/health', :method => :get %></li>
-    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+    <li style="float:right"><%= link_to "Log in", '/login', :method => :get %></li>
+    <li style="float:right"><%= link_to "Sign Up", '/signup', :method => :get %></li>
   </ul>
 
   <div style="background-color:#8fcff7;color:black;padding:20px;">
-    <h2>Login to Your Account</h2>
+    <h2>Log In to Your Account</h2>
   </div>
 
   <form action="action_page.php">

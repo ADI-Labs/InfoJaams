@@ -1,18 +1,15 @@
 class UsersController < ApplicationController
   
   def new
-<<<<<<< HEAD
   	puts params["controller"]
   end
-=======
   	# params[name, password, email, phoneNum]
 
   	# User.new(info from params)
   	# if User.save 
   	# => save it 
   	# else 
-  	# return some error 
->>>>>>> origin/samBranch
+  	# return some error
 
   def password
   end
