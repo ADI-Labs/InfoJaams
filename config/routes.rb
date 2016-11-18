@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/news', to: 'welcome#news'
   get '/about', to: 'welcome#about'
   get '/signup', to: 'users#new'
+  resources :users
   
   # post  '/signup',  to: 'users#new' 
 
