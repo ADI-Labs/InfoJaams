@@ -12,8 +12,24 @@ class UsersController < ApplicationController
   	# return some error
 
   def password
+  	# return some error 
+    @user = User.new
   end
 
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+
+  def create
+    @user = User.new(params[:user])    # Not the final implementation!
+    if @user.save
+      # Handle a successful save if everything is ok.
+    else
+      render 'new'
+    end
+  end
 
   # def search 
   # 	@currentUser = User.find_by(:name => params[name])
