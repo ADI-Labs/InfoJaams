@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  color: #0a88d1
+  color: white;
   font-family: sans-serif;
 }
 
@@ -21,16 +21,29 @@ h3 {
 p {
   font-family: sans-serif;;
   font-size: 16px;
+  color: white;
 }
 
+/* visited link */
+a:visited {
+  color: white;
+}
 
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+a {
+  color:white;
+}
 
 ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  margin: 0;
+  margin: auto;
 }
 
 li {
@@ -69,8 +82,9 @@ input[type=text]:focus {
 
 ul.tab {
   list-style-type: none;
-  margin:0;
+  margin:auto;
   overflow: hidden;
+  justify-content: space-around;
   background-color: #8fcff7;
 }
 

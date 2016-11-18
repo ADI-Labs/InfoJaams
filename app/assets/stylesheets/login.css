@@ -25,6 +25,20 @@ label {
   color:; white;
 }
 
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+a {
+  color:white;
+}
+
 ul {
       list-style-type: none;
       margin: 0;

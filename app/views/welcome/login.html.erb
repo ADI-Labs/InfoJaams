@@ -34,8 +34,8 @@
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="passwordPageGoesHere">password?</a></span>
+      <button type="button" class="cancelbtn"><%= link_to "Cancel", '/', :method => :get %></button>
+      <button type= "button" class="cancelbtn" style="float:right"><%= link_to "Forgot your password?", '/password', :method => :get %></a></button>
     </div>
   </form>
 

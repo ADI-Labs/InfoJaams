@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   #get '/home', to: 'welcome#index'
   get '/about', to: 'welcome#about'
   get '/signup',  to: 'users#new' 
+  get '/password', to: 'users#password'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
