@@ -1,14 +1,14 @@
 body {
-      background-color: white;
+      background-color: #8fcff7;
     }
 
     h1 {
-      color: black;
+      color: white;
       padding: 1px 8px;
     }
 
     h2 {
-      color: #0a88d1
+      color: white;
       font-family: sans-serif;
     }
 
@@ -19,6 +19,24 @@ body {
 
 form {
     border: 3px solid #f1f1f1;
+}
+
+label {
+  color:; white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+a {
+  color:white;
 }
 
 ul {

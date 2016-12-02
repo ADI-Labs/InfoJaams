@@ -1,30 +1,49 @@
 body {
-  background-color: white;
+  background-color: #8fcff7;
+  /*font-family: ‘Courier New’, Courier, monospace;*/
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
-  color: black;
+  color: white;
   padding: 1px 8px;
 }
 
 h2 {
-  color: #0a88d1
+  color: white;
   font-family: sans-serif;
+}
+
+h3 {
+  color: white;
 }
 
 p {
   font-family: sans-serif;;
   font-size: 16px;
+  color: white;
 }
 
+/* visited link */
+a:visited {
+  color: white;
+}
 
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+a {
+  color:white;
+}
 
 ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  margin: auto;
 }
 
 li {
@@ -47,29 +66,25 @@ li a:hover {
 
 input[type=text] {
   width: 300px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 1px;
+  border-radius: 1px;*/
   font-size: 16px;
   background-color: white;
   padding: 12px 2px 12px 12px;
   -webkit-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
 }
+
 input[type=text]:focus {
   width: 40%;
 }
 
-
-
-body {font-family: "Lato", sans-serif;}
-
 ul.tab {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin:auto;
   overflow: hidden;
-  border: 1px solid #ccc;
+  justify-content: space-around;
   background-color: #8fcff7;
 }
 
@@ -79,7 +94,7 @@ ul.tab li {float: left;}
 /* Style the links inside the list items */
 ul.tab li a {
   display: inline-block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 30px;
   text-decoration: none;
@@ -101,7 +116,7 @@ ul.tab li a:focus, .active {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   border-top: none;
 }
 
@@ -122,4 +137,124 @@ a.button {
     padding: 10px 18px;
     font-size: 30px;
     background-color: white;
+    border-radius: 10px;
+}
+
+img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1 {
+    font-size: 30px;
+    background-color: #0a88d1;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    font-size: 30px;
+    background-color: #8fcff7;
+    color: white;
+    border: 2px solid white;
+}
+
+.button2 {
+    font-size: 35px;
+    background-color: #0a88d1;
+    color: white;
+    border-radius: 10px;
+}
+
+.button2:hover {
+    font-size: 35px;
+    background-color: #8fcff7;
+    color: white;
+    border: 2px solid white;
+}
+
+.button3 {
+    font-size: 35px;
+    width: 400px;
+    background-color: #0a88d1;
+    color: white;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+.button3:hover {
+    font-size: 35px;
+    background-color: #8fcff7;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-info {
+  color:#fff;
+  background-color:#0a88d1;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 900px;
+    height: 110px;
+    background-color: #8fcff7;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.flex-item {
+    height: 100px;
+    margin: 10px;
+}
+
+.flex-container1 {
+    display: -webkit-flex;
+    display: flex;
+    width: 900px;
+    height: 270px;
+    background-color: #8fcff7;
+    justify-content: space-around;
+    margin: auto;
+}
+
+div {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+table {
+  color: white;
+  font-family: ‘Courier New’, Courier, monospace;
+  border-spacing: 10px 10px;
+  text-decoration-color: white;
+}
+
+th {
+  font-size: 23px;
+  background-color: #8fcff7;
+  color: white;
+  font-family: ‘Courier New’, Courier, monospace;
 }

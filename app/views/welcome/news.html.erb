@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
-<head>
-	<%= stylesheet_link_tag "login.css" %>
-	<meta charset="utf-8">
-</head>
-<body>
-	<ul>
-		<li><%= link_to "Home", '/home', :method => :get %></a></li>
-		<li><%= link_to "News", '/news', :method => :get %></li>
-		<li><%= link_to "About", '/about', :method => :get %></li>
-		<li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
-	</ul>
-</body>
-<p> Here is the latest news relating to InfoJams! </p>
 
+<head>
+<%= stylesheet_link_tag "index.css" %>
+</head>
+
+<body>
+  <ul>
+    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li><%= link_to "General", '/general', :method => :get %></li>
+    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
+    <li><%= link_to "Music", '/music', :method => :get %></li>
+    <li><%= link_to "Health", '/health', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+<h1 style="text-align:center;"><button class="button button2">News/Sports</button> </h1>
+<table style="width:100%">
+
+<table align="center">
+  <tr>
+    <th> <button class="button button2">Query</button> </th>
+	<th> <button class="button button2">Article</button> </th>
+  </tr>
+  <tr>
+ 	<td style = "text-align:center;">Search query</td>
+    <td style = "text-align:center;">Link to article</td>
+  </tr>
+  <tr>
+    <td style = "text-align:center;">Search query</td>
+    <td style = "text-align:center;">Link to article</td>
+  </tr>
+</table>
+
+</body>
 </html>

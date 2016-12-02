@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <%= @user.name %>, <%= @user.email %>
 <% provide(:title, @user.name) %>
 <h1>
@@ -5,14 +7,147 @@
   <%= @user.name %>
 </h1>
 
-<% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+<title>InfoJaams</title>
+  <head>
+   <%= stylesheet_link_tag "index.css" %>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+
+  <!--Navigation Bar- need to figure out tabs for this-->
+   <ul>
+    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "About", '/about', :method => :get %></li>
+    <li><%= link_to "General", '/general', :method => :get %></li>
+    <li><%= link_to "News & Sports", '/news', :method => :get %></li>
+    <li><%= link_to "Music", '/music', :method => :get %></li>
+    <li><%= link_to "Health", '/health', :method => :get %></li>
+    <li style="float:right"><%= link_to "Login", '/login', :method => :get %></li>
+  </ul>
+
+<body>
+  <!--Top Bar with intro/other graphics -->
+  <h1>Welcome to InfoJaams, <%= @user.name %>!</h1>
+  <div style="background-color:#8fcff7;color:white;padding:20px; margin:auto;">
+      <button type="button" class="button button2"> <%= link_to "Sign Up", '/signup', :method => :get %></button>
+  </div>
+
+  
+
+  <!--Style for the search bars -->
+
+
+  <!--Main search bar -->
+  <h1>What do you want to search for?</h1>
+  <div>
+  <input type="text" name="search" placeholder="Search...">
+  <button type="button" class="button btn-info">Search</button>
+  </div>
+
+  <!--Search by catagory section -->
+<h1>Search by catagory: </h1>
+
+  <!--CSS for catagories of searches (Tabs)-->
+
+    <ul class="tab">
+      <!-- ADD NEW TABS HERE (if we want...?) -->
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'General')">General</a>
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'News')">News/Sports</a></li>
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'Music')">Music</a></l$
+      <li><a href="javascript:void(0)" class="tablinks" onclick="openCatagory(event, 'Health')">Health</a>
+    </ul>
+
+    <div id="General" class="tabcontent">
+      <input type="text" name="search" placeholder="Search...">
+     <button type="button" class="button btn-info">Search</button>
+    </div>
+
+    <div id="News" class="tabcontent">
+    <input type="text" name="search" placeholder="Search...">
+     <button type="button" class="button btn-info">Search</button>
+    </div>
+
+    <div id="Music" class="tabcontent">
+     <input type="text" name="search" placeholder="Search...">
+     <button type="button" class="button btn-info">Search</button>
+    </div>
+
+    <div id="Health" class="tabcontent">
+      <input type="text" name="search" placeholder="Search...">
+     <button type="button" class="button btn-info">Search</button>
+    </div>
+
+<script>
+      function openCatagory(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+<p></p>
+
+<button>
+Create New User Test (Post request)
+<% link_to "Sign Up", '/signup', :method => :post %>
+</button>
+
+
+
+
+<div class="flex-container">
+  <div class="flex-item"> <button class="button button3">Statistics</button> </div>
+  <div class="flex-item"> <button class="button button3">Most Searched</button> </div>
 </div>
+
+<!--Sample photos for statistics.  -->
+<div class="flex-container1">
+  <div class="flex-item"> <img src="https://www.mathsisfun.com/data/images/bar-graph-fruit.gif" alt="1"/> </div>
+  <div class="flex-item"> <img src="http://tedteachersnetwork.pbworks.com/f/1285607143/wordle%20wordle!.PNG"/> </div>
+</div>
+<br>
+
+<!--Search by category buttons and lists. -->
+<h1 style="text-align:center;"><button class="button button2">Searches by Category</button> </h1>
+<table style="width:100%">
+  <tr>
+    <th> <button class="button button1"> <%= link_to('General', '/general', :method => :get) %> </button> </th>
+    <th> <button class="button button1"> <%= link_to('News/Sports', '/news', :method => :get) %> </button> </th>
+    <th> <button class="button button1"> <%= link_to('Music', '/music', :method => :get) %> </button> </th>
+    <th> <button class="button button1"> <%= link_to('Health', '/health', :method => :get) %> </button> </th>
+  </tr>
+  <tr>
+    <td style = "text-align:center;">Google</td>
+    <td style = "text-align:center;"> <a href="url">This article</a></td>
+    <td style = "text-align:center;"><a href="https://soundcloud.com/chancetherapper/favorite-song-ft-childish">This song</a></td>
+    <td style = "text-align:center;"><a href="http://nyti.ms/2dWIpYW">Article title</a></td>
+  </tr>
+  <tr>
+     <td style = "text-align:center;">Google</td>
+    <td style = "text-align:center;"> This article</td>
+    <td style = "text-align:center;">This song</td>
+    <td style = "text-align:center;">Article title</td>
+  </tr>
+  <tr>
+     <td style = "text-align:center;">Google</td>
+    <td style = "text-align:center;"> This article</td>
+    <td style = "text-align:center;">This song</td>
+    <td style = "text-align:center;">Article title</td>
+  </tr>
+</table>
+
+</body>
+</script>
+
+  </body>
+  </html>
