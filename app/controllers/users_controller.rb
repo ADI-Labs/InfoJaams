@@ -1,24 +1,21 @@
 class UsersController < ApplicationController
-  
+
   def new
-<<<<<<< HEAD
   	puts params["controller"]
   end
-=======
   	# params[name, password, email, phoneNum]
 
   	# User.new(info from params)
-  	# if User.save 
-  	# => save it 
-  	# else 
+  	# if User.save
+  	# => save it
+  	# else
   	# return some error 
->>>>>>> origin/samBranch
 
   def password
   end
 
 
-  # def search 
+  # def search
   # 	@currentUser = User.find_by(:name => params[name])
 
   # 	# search = Search.search(params["text"])
@@ -30,8 +27,8 @@ class UsersController < ApplicationController
   # end
 
 
-  # def getHealth 
-  	
+  # def getHealth
+
   # 	@currentUser = User.find_by(:name => params[name])
 
 

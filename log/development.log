@@ -42163,3 +42163,363 @@ Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb (2.1ms)
 Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
 >>>>>>> origin/maddieBranch
+
+
+Started GET "/" for ::1 at 2016-11-18 15:10:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (482.7ms)
+Completed 200 OK in 511ms (Views: 499.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.self-708e2b125e66d73ad891e7f71cad6abbd8d1860d384ae0e1f5ed818dc035f158.css?body=1" for ::1 at 2016-11-18 15:10:59 -0500
+
+
+Started GET "/news" for ::1 at 2016-11-18 15:11:12 -0500
+Processing by WelcomeController#news as HTML
+  Rendered welcome/news.html.erb (13.7ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reply" for 107.20.81.246 at 2016-11-18 15:12:55 -0500
+Cannot render console from 107.20.81.246! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/reply"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.3.1_2/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/Cellar/ruby/2.3.1_2/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/Cellar/ruby/2.3.1_2/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.8ms)
+
+
+Started POST "/messages/reply" for 54.227.165.22 at 2016-11-18 15:15:55 -0500
+Cannot render console from 54.227.165.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SM2c75d317242d25873a3d6290234ebc53", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"91733", "SmsSid"=>"SM2c75d317242d25873a3d6290234ebc53", "FromState"=>"CA", "SmsStatus"=>"received", "FromCity"=>"EL MONTE", "Body"=>"Obama", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SM2c75d317242d25873a3d6290234ebc53", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+16262287464", "ApiVersion"=>"2010-04-01"}
+  Rendered messages/reply.html.erb (1.8ms)
+Completed 200 OK in 2065ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 15:21:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (21.9ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 15:21:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (11.3ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-11-18 15:21:50 -0500
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb (15.2ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/general" for ::1 at 2016-11-18 15:21:52 -0500
+Processing by WelcomeController#general as HTML
+  Rendered welcome/general.html.erb (6.7ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/news" for ::1 at 2016-11-18 15:21:56 -0500
+Processing by WelcomeController#news as HTML
+  Rendered welcome/news.html.erb (6.2ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/music" for ::1 at 2016-11-18 15:21:57 -0500
+Processing by WelcomeController#music as HTML
+  Rendered welcome/music.html.erb (9.2ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/health" for ::1 at 2016-11-18 15:21:58 -0500
+Processing by WelcomeController#health as HTML
+  Rendered welcome/health.html.erb (28.3ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 15:21:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (17.2ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-11-18 15:22:01 -0500
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb (12.3ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-e9775d0cecbff77b4e270080e8c8c655eaba49a68fdc8233ed2cbde99c94349b.css?body=1" for ::1 at 2016-11-18 15:22:01 -0500
+
+
+Started GET "/" for ::1 at 2016-11-18 15:22:07 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (4.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 15:22:25 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (5.5ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.self-708e2b125e66d73ad891e7f71cad6abbd8d1860d384ae0e1f5ed818dc035f158.css?body=1" for 160.39.179.235 at 2016-11-18 15:22:26 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/messages/reply" for 54.152.119.212 at 2016-11-18 15:40:21 -0500
+Cannot render console from 54.152.119.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SMe562eb82e716457623e57dc8819c4ed0", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"94612", "SmsSid"=>"SMe562eb82e716457623e57dc8819c4ed0", "FromState"=>"CA", "SmsStatus"=>"received", "FromCity"=>"OAKLAND", "Body"=>"obama", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SMe562eb82e716457623e57dc8819c4ed0", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+15107356238", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 3339ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The number +15107356238 is unverified. Trial accounts cannot send messages to unverified numbers; verify +15107356238 at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.):
+  app/controllers/messages_controller.rb:23:in `reply'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.3ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 15:54:40 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (42.1ms)
+Completed 200 OK in 86ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 160.39.179.235 at 2016-11-18 15:54:54 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb (5.7ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/general" for 160.39.179.235 at 2016-11-18 15:54:55 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#general as HTML
+  Rendered welcome/general.html.erb (9.0ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/news" for 160.39.179.235 at 2016-11-18 15:54:55 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#news as HTML
+  Rendered welcome/news.html.erb (3.6ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/music" for 160.39.179.235 at 2016-11-18 15:54:56 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#music as HTML
+  Rendered welcome/music.html.erb (3.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/health" for 160.39.179.235 at 2016-11-18 15:54:57 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#health as HTML
+  Rendered welcome/health.html.erb (5.9ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 160.39.179.235 at 2016-11-18 15:54:58 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb (6.9ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-e9775d0cecbff77b4e270080e8c8c655eaba49a68fdc8233ed2cbde99c94349b.css?body=1" for 160.39.179.235 at 2016-11-18 15:54:58 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/password" for 160.39.179.235 at 2016-11-18 15:55:01 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/Users/angelinalam/Desktop/InfoJaams/app/controllers/users_controller.rb:4: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/Users/angelinalam/Desktop/InfoJaams/app/controllers/users_controller.rb:7: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^):
+  app/controllers/users_controller.rb:4: syntax error, unexpected <<
+  app/controllers/users_controller.rb:7: syntax error, unexpected ===, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.6ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 15:56:21 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (34.8ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 160.39.179.235 at 2016-11-18 15:56:26 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb (4.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password" for 160.39.179.235 at 2016-11-18 15:56:28 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#password as HTML
+  Rendered users/password.html.erb (5.3ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 15:56:35 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (6.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/reply" for 52.90.187.183 at 2016-11-18 16:49:32 -0500
+Cannot render console from 52.90.187.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SMc8e9a893b10c89997b924e2ce7a6f7c6", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"91733", "SmsSid"=>"SMc8e9a893b10c89997b924e2ce7a6f7c6", "FromState"=>"CA", "SmsStatus"=>"received", "FromCity"=>"EL MONTE", "Body"=>"barack obama", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SMc8e9a893b10c89997b924e2ce7a6f7c6", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+16262287464", "ApiVersion"=>"2010-04-01"}
+  Rendered messages/reply.html.erb (4.0ms)
+Completed 200 OK in 2125ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 16:51:58 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (60.0ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 16:52:36 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (46.3ms)
+Completed 200 OK in 66ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 16:54:42 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (109.2ms)
+Completed 200 OK in 126ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 160.39.179.235 at 2016-11-18 16:54:45 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb (16.0ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 16:54:47 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (10.4ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 160.39.179.235 at 2016-11-18 17:10:06 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#login as HTML
+  Rendered welcome/login.html.erb (45.7ms)
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-e9775d0cecbff77b4e270080e8c8c655eaba49a68fdc8233ed2cbde99c94349b.css?body=1" for 160.39.179.235 at 2016-11-18 17:10:07 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 17:10:12 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (9.2ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 160.39.179.235 at 2016-11-18 17:10:14 -0500
+Cannot render console from 160.39.179.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb (17.0ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/reply" for 54.242.250.247 at 2016-11-18 17:11:32 -0500
+Cannot render console from 54.242.250.247! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SM4d6731ba5bf70e2b04405e78a772d2a8", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"91733", "SmsSid"=>"SM4d6731ba5bf70e2b04405e78a772d2a8", "FromState"=>"CA", "SmsStatus"=>"received", "FromCity"=>"EL MONTE", "Body"=>"Kanye West", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SM4d6731ba5bf70e2b04405e78a772d2a8", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+16262287464", "ApiVersion"=>"2010-04-01"}
+  Rendered messages/reply.html.erb (1.6ms)
+Completed 200 OK in 4019ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/reply" for 54.210.98.53 at 2016-11-18 17:14:45 -0500
+Cannot render console from 54.210.98.53! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SMd22011de49c561a5ac7c2d0f229fe733", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"20879", "SmsSid"=>"SMd22011de49c561a5ac7c2d0f229fe733", "FromState"=>"MD", "SmsStatus"=>"received", "FromCity"=>"GAITHERSBURG", "Body"=>"Song Closer", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SMd22011de49c561a5ac7c2d0f229fe733", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+12407517602", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 1641ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The number +12407517602 is unverified. Trial accounts cannot send messages to unverified numbers; verify +12407517602 at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.):
+  app/controllers/messages_controller.rb:23:in `reply'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.9ms)
+
+
+Started POST "/messages/reply" for 54.172.198.229 at 2016-11-18 17:18:53 -0500
+Cannot render console from 54.172.198.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#reply as */*
+  Parameters: {"ToCountry"=>"US", "ToState"=>"CA", "SmsMessageSid"=>"SMa61fdd9987995589e1777a2700a3f657", "NumMedia"=>"0", "ToCity"=>"LOS ANGELES", "FromZip"=>"54303", "SmsSid"=>"SMa61fdd9987995589e1777a2700a3f657", "FromState"=>"WI", "SmsStatus"=>"received", "FromCity"=>"GREEN BAY", "Body"=>"Song Closer Chainsmokers", "FromCountry"=>"US", "To"=>"+16267747914", "ToZip"=>"90014", "NumSegments"=>"1", "MessageSid"=>"SMa61fdd9987995589e1777a2700a3f657", "AccountSid"=>"ACf4ffde17e6c54016acef9309e1c69bcc", "From"=>"+19204712847", "ApiVersion"=>"2010-04-01"}
+Completed 500 Internal Server Error in 2139ms (ActiveRecord: 0.0ms)
+
+Twilio::REST::RequestError (The number +19204712847 is unverified. Trial accounts cannot send messages to unverified numbers; verify +19204712847 at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.):
+  app/controllers/messages_controller.rb:23:in `reply'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.7ms)

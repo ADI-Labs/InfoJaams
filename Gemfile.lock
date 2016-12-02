@@ -60,14 +60,6 @@ GEM
       rmagick (>= 2.13.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-<<<<<<< HEAD
-    google_custom_search (0.3.1)
-    google_custom_search_api (2.0.0)
-      addressable
-      httparty
-    httparty (0.14.0)
-      multi_xml (>= 0.5.2)
-=======
     google-api-client (0.9.19)
       addressable (~> 2.3)
       googleauth (~> 0.5)
@@ -77,6 +69,10 @@ GEM
       mime-types (>= 1.6)
       representable (~> 2.3.0)
       retriable (~> 2.0)
+    google_custom_search (0.3.1)
+    google_custom_search_api (2.0.0)
+      addressable
+      httparty
     googleauth (0.5.1)
       faraday (~> 0.9)
       jwt (~> 1.4)
@@ -85,9 +81,10 @@ GEM
       multi_json (~> 1.11)
       os (~> 0.9)
       signet (~> 0.7)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     httpclient (2.8.2.4)
     hurley (0.2)
->>>>>>> origin/aliceBranch
     i18n (0.7.0)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -98,13 +95,10 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     jwt (1.5.6)
-<<<<<<< HEAD
-=======
     little-plugger (1.1.4)
     logging (2.1.0)
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
->>>>>>> origin/aliceBranch
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -116,21 +110,11 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     multi_json (1.12.1)
-<<<<<<< HEAD
-<<<<<<< HEAD
     multi_xml (0.5.5)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
-=======
     multipart-post (2.0.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     os (0.9.6)
->>>>>>> origin/aliceBranch
-=======
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
->>>>>>> origin/maddieBranch
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -177,9 +161,6 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     signet (0.7.3)
       addressable (~> 2.3)
       faraday (~> 0.9)
@@ -189,9 +170,6 @@ GEM
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
->>>>>>> origin/aliceBranch
-=======
->>>>>>> origin/maddieBranch
     spring (2.0.0)
       activesupport (>= 4.2)
     sprockets (3.7.0)
@@ -215,13 +193,7 @@ GEM
       multi_json (>= 1.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     uber (0.0.15)
->>>>>>> origin/aliceBranch
-=======
->>>>>>> origin/maddieBranch
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
     web-console (2.3.0)
@@ -237,13 +209,10 @@ DEPENDENCIES
   bing-search
   byebug
   coffee-rails (~> 4.1.0)
-<<<<<<< HEAD
-  google_custom_search
-  google_custom_search_api
-=======
   fileutils
   google-api-client (~> 0.9)
->>>>>>> origin/aliceBranch
+  google_custom_search
+  google_custom_search_api
   jbuilder (~> 2.0)
   jquery-rails
   json
@@ -262,8 +231,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
-=======
-   1.13.4
->>>>>>> origin/maddieBranch
    1.13.2
