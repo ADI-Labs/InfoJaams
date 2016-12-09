@@ -1,3 +1,4 @@
+
  <html>
  <head>
    <%= stylesheet_link_tag "index.css" %>
@@ -5,7 +6,7 @@
  </head>
  <body>
   <ul>
-    <li><%= link_to "Home", '/', :method => :get %></li>   
+    <li><%= link_to "Home", '/', :method => :get %></li>
     <li><%= link_to "About", '/about', :method => :get %></li>
     <li><%= link_to "General", '/general', :method => :get %></li>
     <li><%= link_to "News & Sports", '/news', :method => :get %></li>
@@ -18,3 +19,34 @@
 <p>This will be a signup page for new users.</p>
 </body>
 </html>
+=======
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+<p>This will be a signup page for new users.</p>
+<p>Minimum Password length is 6!</p>
+
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<%= form_for(@user) do |f| %>
+		<%= render 'shared/error_messages' %>
+
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<%= f.label :email %>
+		<%= f.email_field :email %>
+
+		<%= f.label :password %>
+		<%= f.password_field :password %>
+
+		<%= f.label :password_confirmation, "Confirmation" %>
+		<%= f.password_field :password_confirmation %>
+
+		<%= f.submit "Create my account", class: "btn btn-primary" %>
+		<% end %>
+	</div>
+</div>
+>>>>>>> 35c2fb272d7168fef65c11e8c1563f6e81e23c6c
