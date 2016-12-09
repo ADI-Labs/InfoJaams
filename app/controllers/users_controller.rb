@@ -23,6 +23,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)    # Not the final implementation!
     if @user.save
+      redirect_to @user
       # Handle a successful save if everything is ok.
     else
       render 'new'
@@ -31,17 +32,17 @@ class UsersController < ApplicationController
 
 
   # def search 
-  # 	@currentUser = User.find_by(:name => params[name])
-  # 	# search = Search.search(params["text"])
-  #  	User.update_attribute(:search => search)
-  #  	User.save
+  #   @currentUser = User.find_by(:name => params[name])
+  #   # search = Search.search(params["text"])
+  #   User.update_attribute(:search => search)
+  #   User.save
   # end
 
   # def getHealth 
-  # 	@currentUser = User.find_by(:name => params[name])
-  # 	data = @currentUser.healthNews
-  # 	for each datapoint in data :
-  # 		chartkick.graph(datapoint)
+  #   @currentUser = User.find_by(:name => params[name])
+  #   data = @currentUser.healthNews
+  #   for each datapoint in data :
+  #     chartkick.graph(datapoint)
   # end
 
 private
