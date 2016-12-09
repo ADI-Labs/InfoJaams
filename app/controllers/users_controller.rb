@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   
   def new
+    @user = User.new
   	puts params["controller"]
   end
   	# params[name, password, email, phoneNum]

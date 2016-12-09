@@ -16,6 +16,7 @@ body {
     p {
       font-family: sans-serif;;
       font-size: 16px;
+      color: white;
     }
 
 form {
@@ -88,8 +89,6 @@ button {
     padding: 10px 18px;
     background-color: #8fcff7;
 }
- 
-
 
 .container {
     padding: 16px;
